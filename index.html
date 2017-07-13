@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Encoding UTF-8 -->
+  <meta charset="utf-8" />
+
+  <!-- Page Title -->
+  <title>Password Generator</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Mono:300" rel="stylesheet">
+
+  <!-- Reset CSS -->
+  <link href="resources/css/reset.css" rel="stylesheet" type="text/css" />
+
+  <!-- Style CSS -->
+  <link href="resources/css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+  <header>
+    <h1>Password Generator</h1>
+  </header>
+
+  <main>
+
+    <section class="button-section">
+      <button id="lower_case" class="checkbox enable" type="button"><span>L</span>ower case</button>
+
+      <button id="upper_case" class="checkbox enable" type="button"><span>U</span>pper case</button>
+
+      <button id="numbers" class="checkbox enable" type="button"><span>N</span>umbers</button>
+    </section>
+
+    <section id="inputs">
+
+      <div>
+        <h2>Size</h2>
+
+        <input id="size_input" type="number" value="20" min="0" step="1" max="50" autofocus />
+      </div>
+
+      <button id="generate_button" type="button">Generate</button>
+    </section>
+
+    <section id="password-section">
+      <p id="password" class="output"></p>
+
+      <p id="spaced_paragraph" class="output"></p>
+    </section>
+
+    <script src="./resources/script.js" type="text/javascript"></script>
+
+  </main>
+</body>
+</html>
